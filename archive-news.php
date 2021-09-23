@@ -63,10 +63,10 @@ get_header();
                   </span>
                 </div>
                 <div class="col-12">
-                  <pre class="ajax-content">[{TODO: 'Press button to fetch content'}]</pre>
+                  <div class="ajax-content"></div>
                 </div>
                 <div class="col-12">
-                  <button class="fetch-button">Button</button>
+                  <button class="fetch-button">Re-fetch list</button>
                 </div>
               </div>
             </div>

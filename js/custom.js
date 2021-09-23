@@ -17,10 +17,22 @@
       xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function(){
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
-          const response = xmlhttp.response
+          const response = JSON.parse(xmlhttp.response)
           if (response) {
-            pre.innerHTML = response
-            button.remove()
+            let renderContent = `<ul>`
+            for (let i = 0; i <= 10; i++) {
+              const item = response[i]
+              console.log(response)
+              console.log(response[i])
+              renderContent += `<li data-id="${item.id}">`
+              renderContent += `<img src="https://img.icons8.com/material-outlined/24/000000/${item.completed ? 'ok' : 'error'}--v2.png"/>`
+              renderContent += `<span>${item.title} (user id = ${item.userId})</span>`
+              renderContent += `</li>`
+            }
+
+            renderContent += `<ul>`
+
+            pre.innerHTML = renderContent
           } else {
             pre.innerHTML = 'Ooops... Something went wrong!'
           }
@@ -31,6 +43,8 @@
     }
 
     button.onclick = fetchData;
+
+    fetchData()
 
   });
 
