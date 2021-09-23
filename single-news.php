@@ -24,6 +24,15 @@ get_header();
     <div class="sub-posts">
       <div class="container">
         <div class="row">
+          <div class="col-12">
+            <div class="related-posts">
+              <span>Related posts:</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
             <?php
             // создаем экземпляр
             //$my_posts = new WP_Query;

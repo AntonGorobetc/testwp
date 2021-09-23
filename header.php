@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+<!--  <link rel="stylesheet" href="/css/style.css">-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>
@@ -28,14 +29,15 @@
 	<header id="masthead" class="site-header">
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'testwp' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+      <h1>Test work</h1>
+<!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">--><?php //esc_html_e( 'Primary Menu', 'testwp' ); ?><!--</button>-->
+<!--			--><?php
+//			wp_nav_menu(
+//				array(
+//					'theme_location' => 'menu-1',
+//					'menu_id'        => 'primary-menu',
+//				)
+//			);
+//			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

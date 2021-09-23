@@ -232,3 +232,7 @@ function wpdocs_news_init() {
 }
 
 add_action( 'init', 'wpdocs_news_init' );
+
+// add custom style file
+wp_register_style("custom", get_template_directory_uri() . "/css/style.css", '', '1.0.0');
+wp_enqueue_style('custom');

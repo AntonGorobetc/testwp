@@ -14,6 +14,13 @@
 ?>
       <div class="container">
         <div class="row">
+          <div class="back-button">
+            <a href="/news/">Back to news</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
             <?php
             the_title( '<h1 class="entry-title">', '</h1>' );
             the_content(
