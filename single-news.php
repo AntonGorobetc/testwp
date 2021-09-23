@@ -25,7 +25,7 @@ get_header();
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="related-posts">
+            <div class="sub-title">
               <span>Related posts:</span>
             </div>
           </div>

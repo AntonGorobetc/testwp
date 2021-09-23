@@ -17,21 +17,28 @@ get_header();
 
   <main id="primary" class="site-main">
 
-        <div class="container">
-          <div class="row">
-            <?php
-            if (have_posts()) :
+    <div class="container">
+      <div class="row">
+          <?php
+          if (have_posts()) :
 
-            if (is_home() && !is_front_page()) :
-            ?>
-          </div>
-        </div>
+          if (is_home() && !is_front_page()) :
+          ?>
+      </div>
+    </div>
 
     <header>
       <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
     </header>
           <?php
           endif;
+
+          ?>
+            <div class="container">
+              <div class="row">
+
+          <?php
+
 
           /* Start the Loop */
           while (have_posts()) :
@@ -46,11 +53,31 @@ get_header();
               get_template_part('template-parts/content', get_post_type());
 
           endwhile;
+          ?>
+
+              </div>
+              <div class="row ajax-content-section">
+                <div class="col-12">
+                  <span class="sub-title">
+                    Task 2. Ajax content:
+                  </span>
+                </div>
+                <div class="col-12">
+                  <pre class="ajax-content">[{TODO: 'Press button to fetch content'}]</pre>
+                </div>
+                <div class="col-12">
+                  <button class="fetch-button">Button</button>
+                </div>
+              </div>
+            </div>
+          <?php
 
           the_posts_navigation();
 
           else :
+              ?>
 
+          <?php
               get_template_part('template-parts/content', 'none');
 
           endif;

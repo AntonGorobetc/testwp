@@ -42,12 +42,39 @@ h1.entry-title {
     text-align: center;
 }
 
-.related-posts {
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sub-title {
     font-weight: 500;
     margin-bottom: 10px;
     display: block;
     border-top: 1px solid rgba(0,0,0,.125);
     padding-top: 10px;
+}
+
+.ajax-content-section {
+    margin-top: 25px;
+}
+
+.ajax-content {
+    border-radius: .25rem;
+    height: 400px;
+    overflow: auto;
+}
+.fetch-button {
+    background-color: #334399;
+    color: #fff;
+    padding: 10px 15px 10px;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    position: relative;
+    border-radius: .25rem;
 }
 /*footer*/
 footer {
