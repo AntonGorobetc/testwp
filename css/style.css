@@ -41,7 +41,10 @@ main {
 h1.entry-title {
     text-align: center;
 }
-
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .card-title {
     white-space: nowrap;
     overflow: hidden;
